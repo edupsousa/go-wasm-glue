@@ -2,8 +2,22 @@
   "name": "go-wasm-glue",
   "version": "0.0.1",
   "description": "A TypeScript rewrite of the glue code (go_wasm_exec.js) used to execute Go WebAssembly modules",
-  "main": "dist/index.cjs.js",
+  "main": "dist/index.js",
+  "browser": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn clean && rollup -c",
+    "dev": "yarn clean && rollup -c -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,8 +40,9 @@
   },
   "homepage": "https://github.com/edupsousa/go-wasm-glue#readme",
   "devDependencies": {
+    "rimraf": "^3.0.2",
     "rollup": "^2.72.1",
-    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.6.4"
   }
 }
