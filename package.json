@@ -1,0 +1,28 @@
+{
+  "name": "go-wasm-glue",
+  "version": "0.0.1",
+  "description": "A TypeScript rewrite of the glue code (go_wasm_exec.js) used to execute Go WebAssembly modules",
+  "main": "dist/index.cjs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edupsousa/go-wasm-glue.git"
+  },
+  "keywords": [
+    "go",
+    "golang",
+    "webassembly",
+    "wasm",
+    "typescript",
+    "ts",
+    "glue"
+  ],
+  "author": "Eduardo P de Sousa <edupsousa@gmail.com> (https://github.com/edupsousa)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edupsousa/go-wasm-glue/issues"
+  },
+  "homepage": "https://github.com/edupsousa/go-wasm-glue#readme"
+}
