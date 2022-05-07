@@ -24,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/edupsousa/go-wasm-glue/issues"
   },
-  "homepage": "https://github.com/edupsousa/go-wasm-glue#readme"
+  "homepage": "https://github.com/edupsousa/go-wasm-glue#readme",
+  "devDependencies": {
+    "rollup": "^2.72.1",
+    "rollup-plugin-typescript": "^1.0.1",
+    "typescript": "^4.6.4"
+  }
 }
